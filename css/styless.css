@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100vw;
+  background-color: #fff;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  padding: 0 3rem;
+  background-color: lightyellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 2px 13px rgba(55, 55, 8, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  color: #610505;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/front1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding-top: 5rem;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#home p {
+  font-weight: bold;
+}
+
+#home #search {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#text {
+  background-color: #fff;
+  padding: 0.5rem 5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #000;
+}
+
+.btn {
+  padding: 0 1rem;
+  color: #fff;
+  background-color: #610505;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#recipe {
+  padding-top: 6rem;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 10rem;
+}
+
+#recipe h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #610505;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: #f4f1f1;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-image {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-content {
+  height: 100px;
+  padding: 0.5rem;
+}
+
+.card h1 {
+  margin: 3px 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card button a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.card button {
+  width: 100%;
+  height: 40px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Updated Image Paths */
+#card1 { background-image: url(../images/pancake.jpg); }
+#card2 { background-image: url(../images/soup.jpg); }
+#card3 { background-image: url(../images/panner.jpg); }
+#card4 { background-image: url(../images/salad.jpg); }
+#card5 { background-image: url(../images/spaghetti.jpg); }
+#card6 { background-image: url(../images/burger.jpg); }
+#card7 { background-image: url(../images/pizza.jpg); }
+#card8 { background-image: url(../images/sweet.jpg); }
+
+#contact {
+  padding-top: 5rem;
+  min-height: 100vh;
+  background-image: url(../images/front.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#formm {
+  height: 500px;
+  width: 50%;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+#formm input {
+  width: 50%;
+  height: 30px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+}
+
+#formm textarea {
+  width: 70%;
+  height: 90px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+}
+
+#formm button {
+  padding: 10px 40px !important;
+  border-radius: 5rem !important;
+  margin-top: 20px;
+}
+
+#tags {
+  height: 500px;
+  width: 50%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+#tags h1 {
+  margin: 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+#tags h1 a {
+  color: white;
+}
+
+#tags i {
+  margin: 0 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#tags i:hover {
+  transform: scale(1.1);
+}
